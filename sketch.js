@@ -1,14 +1,8 @@
-
-
-
+// Declarando pontos
 var a  = {'x': 10, 'y':10}
 var b  = {'x': 200, 'y':50}
 var c  = {'x': 20, 'y':100}
-var d  = {'x': 400, 'y':500}
-var e  = {'x': 250, 'y':100}
 
-
-var tri1 = [a, b, c] 
 // Configurações aqui.
 function setup() { 
     createCanvas(windowWidth, windowHeight);
@@ -17,9 +11,9 @@ function setup() {
 
 // Desenhar
 function draw() { 
-    
     background(200)
 
+    // Desenhando o Triângulo.
     triandoBresenham(a, b, c)
 }
 
@@ -91,12 +85,14 @@ function bresenham(p0, p1, color = [0, 0, 0]) {
     } 
 }
 
+// Desenha um triangulo
 function triandoBresenham(a, b, c, color = [0, 0, 0]) {
     bresenham(a, b, color)
     bresenham(b, c, color)
     bresenham(c, a, color)
 }
 
+// Bonus: move um ponto para direita com uma velocidade passada como parametro.
 function moverPontoDir(p, v = 10){
     p['x'] += v
 }
