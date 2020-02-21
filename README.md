@@ -1,4 +1,4 @@
-#Trabalho de Computação Gráfica
+# Trabalho de Computação Gráfica
 
 Aluno: Ericson Rogerio Moreira.
 
