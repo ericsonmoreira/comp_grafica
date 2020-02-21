@@ -15,6 +15,9 @@ function draw() {
 
     // Desenhando o Triângulo.
     triandoBresenham(a, b, c)
+
+    // Caso queria testar como move um ponto para direita
+    // moverPontoDir(a, v=1)
 }
 
 // desenha um ponto
